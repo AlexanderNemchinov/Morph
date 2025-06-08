@@ -1,0 +1,21 @@
+This software includes the following third-party components in portable, unmodified form.
+Each retains its original license:
+
+---
+
+FFmpeg (https://ffmpeg.org)  
+License: GNU General Public License v2  
+Binary downloaded from: https://www.gyan.dev/ffmpeg/builds/
+
+---
+
+ExifTool (https://exiftool.org)  
+License: Perl Artistic License OR GNU GPL v1+  
+Binary downloaded from: https://exiftool.org
+
+---
+
+ImageMagick (https://imagemagick.org)  
+License: ImageMagick License (Apache-compatible)  
+Binary downloaded from: https://imagemagick.org/script/download.php
+  
