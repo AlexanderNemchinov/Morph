@@ -212,7 +212,7 @@ def generate_thumbnail(file_path):
     return icon
 
 def convert_video_to_mp4(input_path, output_path, progress_callback):
-    cmd = f'"{ffmpeg_path}" -i "{input_path}" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -map -0:d -c:v libx264 -crf 18 -preset slow -c:a copy -c:s copy -c:t copy -map_metadata 0 -fflags +genpts -progress pipe:1 "{output_path}"'
+    cmd = f'"{ffmpeg_path}" -i "{input_path}" -map 0:v:0? -map 0:a? -map 0:s? -map 0:t? -map -0:d -c:v libx264 -profile:v high444 -pix_fmt yuv444p -crf 18 -preset medium -c:a aac -b:a 320k -c:s copy -c:t copy -map_metadata 0 -fflags +genpts -movflags +faststart -progress pipe:1 "{output_path}"'
     try:
         process = subprocess.Popen(
             cmd, shell=True, creationflags=0x08000000, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding='utf-8'
