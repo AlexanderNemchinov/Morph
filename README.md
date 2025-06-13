@@ -41,7 +41,7 @@ All converted files are created next to the originals
   
 To: MP4  
 From:  
-.mp4, .avi, .mov, .wmv, .flv, .webm, .ts, .mpeg, .vob, .m2ts, .bdav, .mpg  
+.mp4, .mkv, .avi, .mov, .wmv, .flv, .webm, .ts, .mpeg, .vob, .m2ts, .bdav, .mpg  
   
 To: MKV  
 From:  
